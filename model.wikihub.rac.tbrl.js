@@ -98,7 +98,7 @@
             return promise.then(function(body) {
                 var content = {
                     body: body,
-                    tag_names_string: ps.tags ? ps.tags.join(',') || '',
+                    tag_names_string: ps.tags ? ps.tags.join(',') : '',
                     title: title
                 };
                 return request(self.POST_URL, {
